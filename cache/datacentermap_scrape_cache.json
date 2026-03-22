@@ -1,0 +1,785 @@
+{
+  "https://www.datacentermap.com/usa/alabama/anniston/sec-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/anniston/sec-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/auburn/aubix-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/auburn/aubix-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-85.51373/32.60107/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/auburn/core-scientific-auburn/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/auburn/core-scientific-auburn/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-85.51285/32.60093/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/dc-blox-bhm-1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/dc-blox-bhm-1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.82075/33.49978/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/fresh-technology/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/fresh-technology/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.78343/33.36539/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/level3-birmingham1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/level3-birmingham1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.80979/33.51947/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/logistic-land-investments-llc/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/logistic-land-investments-llc/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-87.03865/33.34365/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/lumen-birmingham-2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/lumen-birmingham-2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.82334/33.49589/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/nebius-birmingham-bhm01/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/nebius-birmingham-bhm01/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.88343/33.4275/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/southern-telecom-birmingham/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/southern-telecom-birmingham/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.81289/33.51801/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/twtc-birmingham/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/twtc-birmingham/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.80812/33.51818/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/birmingham/usdc-columbiana/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/birmingham/usdc-columbiana/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": "22 MW Jan 2025 - Phase Announced The second phase of the development will add 33MW, bringing the total investment to $440 million. - Phase Power: 33 MW Feb 2025 - Rebranding Company name: Digihost Blockchain firm Digihost announced it would be setting up a dedicated unit for non-crypto data center hosting. The new unit’s first project is converting Digihost’s existing site in Columbiana, Alabama, into a 55MW colocation facility. Related Story Ownership We have one or more owners or investors listed for this facility: Pricing & Services If you are looking for colocation, cloud, connectivity or other services in USDC Columbiana , other data centers in Birmingham or operated by US Data Centers, Inc. , please try our free quote service or reach out for a free consultation about your data center needs. We use a best effort process to qualify opportunities and route them to matching operators. Advertisement Nearest Data Centers The below data centers are located closest to 130 Industrial Pkwy . Distance Data Center Address 22.74 miles Nebius Birmingham BHM01 201-260 Milan Pkwy 24.66 miles Lumen Birmingham 2 401 6th Ave S 24.83 miles DC BLOX Birmingham 433 6th Street South 25.75 miles Southern Telecom Birmingham 600 18th St N 25.77 miles Lumen Birmingham 1 2001 Park Place North 26.55 miles Project Marvel Rock Mountain Lake Rd 55.95 miles SEC Data Center 1809 Hillyer Robinson Industrial Pkwy 62.05 miles Sparrow Technology Solutions, LLC. 3015 McGehee Rd 64.14 miles Meta Montgomery Data Center TBA - To be announced 75.9 miles AUBix Data Center 1571 W Samford Ave Shortlist Data Center Request Quote US Data Centers, Inc. Data Center Operator at USDC Columbiana 130 Industrial Pkwy Headquartered in Miami , Florida Data Centers 1 Find Provider Data Center Cloud Services Internet Exchanges Northern Virginia Tour Procurement Request Quote Free Consultation Promotions Research Data Center Map About our data About DCM Advertising Contact Follow on LinkedIn Create Free Account Terms of Use Sitemap",
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.62281/33.18124/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-85.74827/34.9143/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county-building-1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county-building-1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-85.74736/34.91371/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county-building-2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/bridgeport/google-jackson-county-building-2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-85.74587/34.91367/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/dc-blox-hsv-1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/dc-blox-hsv-1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.69215/34.71182/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/meta-data-center-hunstville/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/meta-data-center-hunstville/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.62841/34.84413/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.62886/34.83952/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.62888/34.84142/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-3/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-3/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.62891/34.84304/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-4/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-4/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.62694/34.84676/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-5/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/meta-huntsville-building-5/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.62699/34.84793/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/peacecom-huntsville/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/peacecom-huntsville/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.59346/34.69982/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/huntsville/simple-helix-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/huntsville/simple-helix-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.69189/34.74544/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/mobile/assurance-technology/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/mobile/assurance-technology/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-88.11833/30.67477/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/mobile/level3-mobile1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/mobile/level3-mobile1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-88.04838/30.69079/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/mobile/server-corps/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/mobile/server-corps/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-88.1809/30.70226/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/mobile/twtc-mobile/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/mobile/twtc-mobile/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-88.04053/30.69114/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/montgomery/meta-montgomery-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/montgomery/meta-montgomery-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.27289/32.35734/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/montgomery/sparrow-technology/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/montgomery/sparrow-technology/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.25852/32.33813/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/montgomery/twtc-montgomery1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/montgomery/twtc-montgomery1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.30956/32.37747/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alabama/montgomery/twtc-montgomery2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alabama/montgomery/twtc-montgomery2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-86.23128/32.33108/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/anchorage/alasconnect-anchorage-dc4/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/anchorage/alasconnect-anchorage-dc4/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-149.74159/61.2101/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/anchorage/anchorage-dc5/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/anchorage/anchorage-dc5/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-149.9123/61.18889/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/anchorage/gci-anchorage/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/anchorage/gci-anchorage/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-149.89048/61.15843/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/anchorage/talkeetna-alaska-teleport/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/anchorage/talkeetna-alaska-teleport/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-150.0321/62.33247/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/cordova/cordova-electric-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/cordova/cordova-electric-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-145.57929/60.59352/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/fairbanks/fairbanks-dc1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/fairbanks/fairbanks-dc1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-147.71964/64.85161/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/palmer/alasconnect-palmer-dc2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/palmer/alasconnect-palmer-dc2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-149.11253/61.58821/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/prudhoe-bay/prudhoe-bay-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/prudhoe-bay/prudhoe-bay-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-148.67341/70.29862/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/alaska/wrangell/greensparc-wrangell/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/alaska/wrangell/greensparc-wrangell/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-132.33678/56.39688/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/nogales-az/mdc-nogales/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/nogales-az/mdc-nogales/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-110.94375/31.33483/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/1111-systems-scottsdale/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/1111-systems-scottsdale/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-111.91858/33.63251/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/120-east-van-buren-street/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/120-east-van-buren-street/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-112.0719/33.45191/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/2121-s-price/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/2121-s-price/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.mapbox.com/about/maps | https://www.openstreetmap.org/copyright/ | https://apps.mapbox.com/feedback/?owner=mapbox&id=light-v10&access_token=pk.eyJ1IjoiZGF0YWNlbnRlcm1hcCIsImEiOiJjbGdpMGt4bTAwM2hlM2hsdmJ4eDd0MXBhIn0.L5e4yEe_Q6k4J4BoAVIsPA#/-111.88695/33.27485/12 | https://www.mapbox.com/ | https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/2500-W-Frye-Rd/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/2500-W-Frye-Rd/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/3110-north-central/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/3110-north-central/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/491st-ave-thomas-rd/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/491st-ave-thomas-rd/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/5cdc-phoenix-phx01/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/5cdc-phoenix-phx01/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-peoria-logistics-park/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-peoria-logistics-park/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx01/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx01/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx04/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx04/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx06/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx06/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx07/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx07/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx08/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx08/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx09/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx09/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx12/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx12/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx13/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx13/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx14/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/aligned-phx14/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-loop-202-dobbins-road/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-loop-202-dobbins-road/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-phx-10464-e-pecos-road/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-phx-10464-e-pecos-road/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-phx-9848-e-pecos-road/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-phx-9848-e-pecos-road/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-phx-pecos-road-campus/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/amazon-aws-phx-pecos-road-campus/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/american-internet-services-vbdc/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/american-internet-services-vbdc/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/apple-mesa-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/apple-mesa-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/att-1301-w-univesity/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/att-1301-w-univesity/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/buckeye-tech-corridor/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/buckeye-tech-corridor/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/centersquare-phx2-a/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/centersquare-phx2-a/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/cgi-phoenix-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/cgi-phoenix-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/cleardata/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/cleardata/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/cogent-data-center-phoenix-2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/cogent-data-center-phoenix-2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/cogent-phoenix/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/cogent-phoenix/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/colobarn-phoenix-data-center/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/colobarn-phoenix-data-center/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/colohouse-phoenix/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/colohouse-phoenix/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/comarch-mesa/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/comarch-mesa/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-3/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-3/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-4/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-4/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-5/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-5/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-6/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-6/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-7/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-7/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-8/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-building-8/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-campus/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-goodyear-campus/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-phx-ii-building-1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-phx-ii-building-1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/arizona/phoenix/compass-phx-ii-building-2/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/arizona/phoenix/compass-phx-ii-building-2/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  },
+  "https://www.datacentermap.com/usa/california/bakersfield/level3-bakerfield1/": {
+    "Datacenter URL": "https://www.datacentermap.com/usa/california/bakersfield/level3-bakerfield1/",
+    "Address": null,
+    "Service Description": null,
+    "Build-up Power Capacity": null,
+    "Whitespace": null,
+    "Website Links": "https://www.linkedin.com/company/data-center-map/",
+    "Scrape Status": "ok"
+  }
+}
