@@ -1,2 +1,4 @@
 .DS_Store
 data/raw/usa_data/electricSubstations/
+*.duckdb
+*.duckdb.wal
