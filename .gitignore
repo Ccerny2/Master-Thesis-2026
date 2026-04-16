@@ -3,3 +3,4 @@ data/raw/usa_data/electricSubstations/
 *.duckdb
 *.duckdb.wal
 *.parquet
+data/raw/variable_data/electricsubstations/
