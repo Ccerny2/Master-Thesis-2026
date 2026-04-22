@@ -1,0 +1,5 @@
+Existing Electric Substations
+
+Downloaded from ourgridfuture.org, Horizon Climate Group, 2025. Originally from ORNL, LANL, INL, NGA and HSIP, 2022. Attribute table modified by Horizon Climate Group. Suggested citation below.
+
+Oak Ridge National Laboratory (ORNL), Los Alamos National Laboratory (LANL), Idaho National Laboratory (INL), National Geospatial-Intelligence Agency (NGA), Homeland Security Infrastructure Program (HSIP) Team, Electrical Substations, April 2022, https://gem.anl.gov/tool. Modified by Horizon Climate Group, 2025, ourgridfuture.org.

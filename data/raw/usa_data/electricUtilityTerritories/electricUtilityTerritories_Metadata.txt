@@ -1,5 +1,0 @@
-Electric Utility Territories
-
-Downloaded from ourgridfuture.org, Horizon Climate Group, 2025. Originally from ORNL, LANL, INL, NGA & HSIP, 2021. Attribute table modified by Horizon Climate Group. Suggested citation below.
-
-Oak Ridge National Laboratory (ORNL), Los Alamos National Laboratory (LANL), Idaho National Laboratory (INL), National Geospatial-Intelligence Agency (NGA) Homeland Security Infrastructure Program (HSIP) Team, Electric Retail Service Territories, November 8, 2021, https://atlas.eia.gov/datasets/f4cd55044b924fed9bc8b64022966097_0/about. Modified by Horizon Climate Group, 2025.
