@@ -1,0 +1,481 @@
+---
+title: "Difference-in-Differences Analysis"
+output: html_document
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(fixest)
+library(did)
+library(dplyr)
+library(ggplot2)
+library(tibble)
+library(purrr)
+library(broom)
+
+# set working directory if needed
+# setwd("path/to/project")
+
+df <- read_csv("data/processed/for_analysis/va_did_panel.csv")
+
+df <- df %>%
+  mutate(
+    census_geoid = as.character(census_geoid),
+    year = as.integer(year),
+    first_entry_year = as.numeric(first_entry_year),
+    weight = as.numeric(weight),
+    ever_treated = if_else(!is.na(first_entry_year) & first_entry_year > 0, 1, 0),
+    post = if_else(ever_treated == 1 & year >= first_entry_year, 1, 0),
+    g = if_else(ever_treated == 1, as.integer(first_entry_year), 0L)
+  )
+```
+
+```{r twfe, message=FALSE, warning=FALSE}
+  # Baseline TWFE model
+  twfe <- feols(
+  inefficient_pricing ~ post | census_geoid + year,
+  data = df,
+  weights = ~ weight,
+  cluster = ~ census_geoid
+)
+
+summary(twfe)
+```
+
+
+```{r sun-abraham, message=FALSE, warning=FALSE}
+# Sun and Abraham (2021) model
+
+max_year <- max(df$year, na.rm = TRUE)
+
+df <- df %>%
+  mutate(
+    cohort_sa = if_else(
+      ever_treated == 1,
+      as.integer(first_entry_year),
+      10000L
+    ),
+    g = if_else(
+      ever_treated == 1,
+      as.integer(first_entry_year),
+      0L
+    )
+  )
+
+df %>%
+  distinct(census_geoid, ever_treated, first_entry_year, cohort_sa, g) %>%
+  count(ever_treated, cohort_sa, g) %>%
+  arrange(ever_treated, cohort_sa)
+
+sa <- feols(
+  inefficient_pricing ~ sunab(cohort_sa, year, ref.p = -1) |
+    census_geoid + year,
+  data = df,
+  weights = ~ weight,
+  cluster = ~ census_geoid
+)
+
+summary(sa)
+summary(sa, agg = "ATT")
+iplot(sa)
+```
+
+## Callaway and Sant'Anna (2021)
+
+```{r callaway-santanna, message=FALSE, warning=FALSE}
+library(did)
+library(dplyr)
+
+# ------------------------------------------------------------
+# Clean dataframe for did::att_gt()
+# ------------------------------------------------------------
+
+df_cs <- df %>%
+  mutate(
+    id_num = as.numeric(as.integer(factor(census_geoid))),
+    year = as.numeric(year),
+    g = if_else(ever_treated == 1, as.numeric(first_entry_year), 0),
+    weight = as.numeric(weight),
+    inefficient_pricing = as.numeric(inefficient_pricing)
+  ) %>%
+  select(id_num, year, g, weight, inefficient_pricing) %>%
+  filter(
+    !is.na(id_num),
+    !is.na(year),
+    !is.na(g),
+    !is.na(weight),
+    !is.na(inefficient_pricing),
+    weight > 0
+  ) %>%
+  as.data.frame()
+
+# Quick checks
+df_cs %>%
+  summarise(
+    rows = n(),
+    ids = n_distinct(id_num),
+    years = n_distinct(year),
+    treated_ids = n_distinct(id_num[g > 0]),
+    control_ids = n_distinct(id_num[g == 0])
+  )
+
+df_cs %>%
+  distinct(id_num, g) %>%
+  count(g)
+```
+
+```{r callaway-main, message=FALSE, warning=FALSE}
+# ------------------------------------------------------------
+# Estimate ATT(g,t)
+# ------------------------------------------------------------
+
+cs <- did::att_gt(
+  yname = "inefficient_pricing",
+  tname = "year",
+  idname = "id_num",
+  gname = "g",
+  data = df_cs,
+  panel = TRUE,
+  allow_unbalanced_panel = TRUE,
+  control_group = "nevertreated",
+  xformla = ~ 1,
+  est_method = "reg",
+  weightsname = "weight",
+  bstrap = FALSE,
+  faster_mode = FALSE
+)
+
+summary(cs)
+```
+
+```{r callaway-dynamic, message=FALSE, warning=FALSE}
+# ------------------------------------------------------------
+# Dynamic / event-study aggregation
+# ------------------------------------------------------------
+
+cs_dyn <- did::aggte(
+  cs,
+  type = "dynamic",
+  na.rm = TRUE
+)
+
+summary(cs_dyn)
+
+did::ggdid(cs_dyn) +
+  ggplot2::labs(
+    title = "Callaway-Sant'Anna Dynamic Effects",
+    x = "Event time",
+    y = "ATT"
+  )
+```
+
+```{r callaway-simple, message=FALSE, warning=FALSE}
+# ------------------------------------------------------------
+# Overall simple ATT
+# ------------------------------------------------------------
+
+cs_simple <- did::aggte(
+  cs,
+  type = "simple",
+  na.rm = TRUE
+)
+
+summary(cs_simple)
+```
+
+```{r compare models, message=FALSE, warning=FALSE}
+## Compare DiD estimators
+
+```{r did-method-comparison-plot, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tibble)
+
+# -----------------------------
+# Extract estimates
+# -----------------------------
+
+# TWFE
+twfe_est <- broom::tidy(twfe, conf.int = TRUE) %>%
+  filter(term == "post") %>%
+  transmute(
+    method = "TWFE",
+    estimate = estimate,
+    se = std.error,
+    conf.low = conf.low,
+    conf.high = conf.high
+  )
+
+# Sun-Abraham aggregate ATT
+sa_att <- summary(sa, agg = "ATT")
+
+sa_est <- tibble(
+  method = "Sun-Abraham",
+  estimate = coef(sa_att)[1],
+  se = se(sa_att)[1],
+  conf.low = estimate - 1.96 * se,
+  conf.high = estimate + 1.96 * se
+)
+
+# Callaway-Sant'Anna simple ATT
+cs_est <- tibble(
+  method = "Callaway-Sant'Anna",
+  estimate = cs_simple$overall.att,
+  se = cs_simple$overall.se,
+  conf.low = estimate - 1.96 * se,
+  conf.high = estimate + 1.96 * se
+)
+
+# Combine
+did_compare <- bind_rows(
+  twfe_est,
+  sa_est,
+  cs_est
+) %>%
+  mutate(
+    method = factor(
+      method,
+      levels = c("TWFE", "Sun-Abraham", "Callaway-Sant'Anna")
+    )
+  )
+
+did_compare
+```
+
+```{r did-method-comparison-plot, message=FALSE, warning=FALSE}
+ggplot(did_compare, aes(x = method, y = estimate)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray50") +
+  geom_point(size = 3) +
+  geom_errorbar(
+    aes(ymin = conf.low, ymax = conf.high),
+    width = 0.15,
+    linewidth = 0.8
+  ) +
+  coord_flip() +
+  labs(
+    title = "Estimated Effect of Data Center Entry on Inefficient Pricing",
+    subtitle = "Comparison across DiD estimators",
+    x = NULL,
+    y = "Estimated ATT ($/MWh)"
+  ) +
+  theme_minimal(base_size = 13)
+  ```
+
+  ## Multi-outcome DiD models
+
+```{r multi-outcome-did, message=FALSE, warning=FALSE}
+# ------------------------------------------------------------
+# Outcomes to estimate
+# ------------------------------------------------------------
+
+outcomes <- c(
+  "avg_total_lmp",
+  "inefficient_pricing",
+  "avg_congestion",
+  "avg_loss",
+  "avg_energy"
+)
+
+outcome_labels <- c(
+  inefficient_pricing = "Inefficient Pricing",
+  avg_congestion = "Congestion",
+  avg_loss = "Marginal Loss",
+  avg_total_lmp = "Total LMP",
+  avg_energy = "System Energy"
+)
+
+# ------------------------------------------------------------
+# Helper: TWFE
+# ------------------------------------------------------------
+
+run_twfe <- function(y, data = df) {
+  feols(
+    as.formula(paste0(y, " ~ post | census_geoid + year")),
+    data = data,
+    weights = ~ weight,
+    cluster = ~ census_geoid
+  )
+}
+
+extract_twfe <- function(model, y) {
+  broom::tidy(model, conf.int = TRUE) %>%
+    filter(term == "post") %>%
+    transmute(
+      outcome = y,
+      method = "TWFE",
+      estimate = estimate,
+      se = std.error,
+      conf.low = conf.low,
+      conf.high = conf.high,
+      p.value = p.value
+    )
+}
+
+# ------------------------------------------------------------
+# Helper: Sun-Abraham
+# ------------------------------------------------------------
+
+run_sa <- function(y, data = df) {
+  feols(
+    as.formula(
+      paste0(y, " ~ sunab(cohort_sa, year, ref.p = -1) | census_geoid + year")
+    ),
+    data = data,
+    weights = ~ weight,
+    cluster = ~ census_geoid
+  )
+}
+
+extract_sa <- function(model, y) {
+  sa_att <- summary(model, agg = "ATT")
+  
+  est <- coef(sa_att)[1]
+  se_val <- se(sa_att)[1]
+  
+  tibble(
+    outcome = y,
+    method = "Sun-Abraham",
+    estimate = est,
+    se = se_val,
+    conf.low = est - 1.96 * se_val,
+    conf.high = est + 1.96 * se_val,
+    p.value = 2 * pnorm(abs(est / se_val), lower.tail = FALSE)
+  )
+}
+
+# ------------------------------------------------------------
+# Helper: Callaway-Sant'Anna
+# ------------------------------------------------------------
+
+make_cs_data <- function(y, data = df) {
+  data %>%
+    mutate(
+      id_num = as.numeric(as.integer(factor(census_geoid))),
+      year = as.numeric(year),
+      g = if_else(ever_treated == 1, as.numeric(first_entry_year), 0),
+      weight = as.numeric(weight),
+      outcome_y = as.numeric(.data[[y]])
+    ) %>%
+    select(id_num, year, g, weight, outcome_y) %>%
+    filter(
+      !is.na(id_num),
+      !is.na(year),
+      !is.na(g),
+      !is.na(weight),
+      !is.na(outcome_y),
+      weight > 0
+    ) %>%
+    as.data.frame()
+}
+
+run_cs <- function(y, data = df) {
+  df_cs <- make_cs_data(y, data)
+  
+  att <- did::att_gt(
+    yname = "outcome_y",
+    tname = "year",
+    idname = "id_num",
+    gname = "g",
+    data = df_cs,
+    panel = TRUE,
+    allow_unbalanced_panel = TRUE,
+    control_group = "nevertreated",
+    xformla = ~ 1,
+    est_method = "reg",
+    weightsname = "weight",
+    bstrap = FALSE,
+    faster_mode = FALSE
+  )
+  
+  simple <- did::aggte(att, type = "simple", na.rm = TRUE)
+  dynamic <- did::aggte(att, type = "dynamic", na.rm = TRUE)
+  
+  list(att_gt = att, simple = simple, dynamic = dynamic)
+}
+
+extract_cs <- function(cs_obj, y) {
+  est <- cs_obj$simple$overall.att
+  se_val <- cs_obj$simple$overall.se
+  
+  tibble(
+    outcome = y,
+    method = "Callaway-Sant'Anna",
+    estimate = est,
+    se = se_val,
+    conf.low = est - 1.96 * se_val,
+    conf.high = est + 1.96 * se_val,
+    p.value = 2 * pnorm(abs(est / se_val), lower.tail = FALSE)
+  )
+}
+
+# ------------------------------------------------------------
+# Run all models
+# ------------------------------------------------------------
+
+twfe_models <- map(outcomes, run_twfe)
+names(twfe_models) <- outcomes
+
+sa_models <- map(outcomes, run_sa)
+names(sa_models) <- outcomes
+
+cs_models <- map(outcomes, run_cs)
+names(cs_models) <- outcomes
+
+# ------------------------------------------------------------
+# Extract comparison table
+# ------------------------------------------------------------
+
+twfe_results <- map2_dfr(twfe_models, names(twfe_models), extract_twfe)
+sa_results <- map2_dfr(sa_models, names(sa_models), extract_sa)
+cs_results <- map2_dfr(cs_models, names(cs_models), extract_cs)
+
+did_results_all <- bind_rows(
+  twfe_results,
+  sa_results,
+  cs_results
+) %>%
+  mutate(
+    outcome_label = recode(outcome, !!!outcome_labels),
+    method = factor(
+      method,
+      levels = c("TWFE", "Sun-Abraham", "Callaway-Sant'Anna")
+    ),
+    outcome_label = factor(
+      outcome_label,
+      levels = outcome_labels[outcomes]
+    )
+  )
+
+did_results_all %>%
+  arrange(outcome_label, method) %>%
+  print(n = Inf)
+```
+
+```{r multi-outcome-did-plot, message=FALSE, warning=FALSE}
+ggplot(did_results_all, aes(x = method, y = estimate)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray50") +
+  geom_point(size = 2.5) +
+  geom_errorbar(
+    aes(ymin = conf.low, ymax = conf.high),
+    width = 0.15,
+    linewidth = 0.7
+  ) +
+  coord_flip() +
+  facet_wrap(~ outcome_label, scales = "free_x") +
+  labs(
+    title = "Estimated Effects of Data Center Entry Across DiD Estimators",
+    subtitle = "TWFE, Sun-Abraham, and Callaway-Sant'Anna",
+    x = NULL,
+    y = "Estimated ATT ($/MWh)"
+  ) +
+  theme_minimal(base_size = 12)
+```
+
+```{r save-multi-outcome-results, message=FALSE, warning=FALSE}
+dir.create("output", showWarnings = FALSE)
+
+write_csv(
+  did_results_all,
+  "output/did_results_all_outcomes.csv"
+)
+```
