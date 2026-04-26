@@ -1,0 +1,48 @@
+\begin{table}[htbp]
+\centering                                                                                                                                                    
+\caption{Covariate Balance}
+\label{tab:balance}
+
+\begin{subtable}{\textwidth}
+\centering                                                                                                                                                    
+\caption{Standardised Differences}
+\begin{tabular}{lcc}                                                                                                                                      
+\hline\hline  
+\textbf{Covariate} & \textbf{Before Matching} & \textbf{After Matching} \\
+\hline                                                                                                                                                        
+    Log total population                &   0.550 &   0.406 \\
+    Proportion white                    &  -0.668 &  -0.237 \\
+    Proportion HS or above              &   1.035 &   0.337 \\
+    Log median household income         &   1.931 &   0.566 \\
+    Log total housing units             &   0.088 &   0.294 \\
+\hline\hline                                                                                                                                                 
+\end{tabular}
+\end{subtable}
+
+\vspace{1em}
+
+\begin{subtable}{\textwidth}
+\centering                                                                                                                                                    
+\caption{Weighted Regression P-values}
+\begin{tabular}{lccc}
+\hline\hline
+\textbf{Covariate} & \textbf{Coefficient} & \textbf{Before Matching} & \textbf{After Matching} \\
+\hline                                                                                                                                                        
+    Log total population                &   0.188 & 0.059$^{*}$ & 0.183$$ \\
+    Proportion white                    &  -4.314 & 0.072$^{*}$ & 0.504$$ \\
+    Proportion HS or above              &   1.627 & 0.013$^{**}$ & 0.357$$ \\
+    Log median household income         &   0.199 & 0.000$^{***}$ & 0.131$$ \\
+    Log total housing units             &   0.144 & 0.794$$ & 0.393$$ \\
+\hline\hline                                                                                                                                                 
+\end{tabular}
+\end{subtable}                                                                                                                                              
+
+\vspace{0.5em}                                                                                                                                              
+\begin{minipage}{\textwidth}
+\footnotesize
+\textit{Notes:} Standardised differences are calculated as the difference in covariate means between treated and control tracts, divided by the pooled 
+standard deviation. Weighted regression p-values are obtained by regressing each covariate on the treatment indicator, weighted by matching weights.           
+$^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{minipage}                                                                                                                                              
+
+\end{table}

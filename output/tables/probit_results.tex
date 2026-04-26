@@ -1,0 +1,25 @@
+\begin{table}[htbp]                                                                                                                      
+\centering     
+\caption{Probit Model: Propensity Score Estimation}
+\label{tab:probit}                                                                                                                                          
+\begin{tabular}{lccc}
+\hline\hline                                                                                                                                                 
+\textbf{Covariate} & \textbf{Coefficient} & \textbf{Std. Error} & \textbf{p-value} \\
+\hline                                                                                                                                                        
+    Constant                            & -22.840$^{***}$ &   5.843 &   0.000 \\
+    Log total population                &   0.265$$ &   0.842 &   0.753 \\
+    Proportion white                    &  -0.027$^{**}$ &   0.011 &   0.020 \\
+    Proportion HS or above              &  -0.012$$ &   0.042 &   0.781 \\
+    Log median household income         &   1.859$^{***}$ &   0.630 &   0.003 \\
+    Log total housing units             &   0.069$$ &   0.749 &   0.926 \\
+\hline                                                                                                                                                        
+Observations & \multicolumn{3}{c}{340} \\
+Pseudo $R^2$ & \multicolumn{3}{c}{0.330} \\                                                                                      
+\hline\hline                                                                                                                                                 
+\end{tabular}                                                                                                                                               
+\vspace{0.5em}                                                                                                                                              
+\begin{minipage}{\textwidth}
+\footnotesize                                                                                                                                                 
+\textit{Notes:} Probit model estimated on logged covariates. $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{minipage}                                                                                                                                              
+\end{table}
