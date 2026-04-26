@@ -1,0 +1,65 @@
+\begin{table}[htbp]
+\centering
+\caption{Summary Statistics for Census Tracts Before and After Propensity Score Matching}
+\label{tab:summary_stats}
+\begin{tabular}{lcccccc}
+\hline\hline
+ & \multicolumn{3}{c}{Before Propensity Score Matching} & \multicolumn{3}{c}{After Propensity Score Matching} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+ & Treated & Untreated & Diff & Treated & Untreated & Diff \\
+ & (1) & (2) & (1)--(2) & (3) & (4) & (3)--(4) \\
+\hline
+    \multicolumn{7}{l}{\textit{Panel A: Demographic Characteristics in 2016}} \\
+    Population & 6,362.10 & 4,874.40 & 1,487.70$^{**}$ & 6,362.10 & 5,231.07 & 1,131.03$$ \\
+     & [2,599.21] & [1,906.56] & (618.93) & [2,599.21] & [2,148.53] & (703.95) \\
+    Percent White & 61.75 & 73.60 & -11.86$^{*}$ & 61.75 & 66.06 & -4.31$$ \\
+     & [14.32] & [20.63] & (6.58) & [14.32] & [21.39] & (6.42) \\
+    Percent HS Graduates & 92.99 & 86.65 & 6.34$^{**}$ & 92.99 & 91.37 & 1.63$$ \\
+     & [3.42] & [7.96] & (2.53) & [3.42] & [5.91] & (1.75) \\
+    Median Household Income & 119,151.00 & 64,343.65 & 54,807.35$^{***}$ & 119,151.00 & 104,474.75 & 14,676.25$$ \\
+     & [24,964.97] & [35,060.83] & (11,179.83) & [24,964.97] & [43,177.14] & (12,817.64) \\
+    Housing Units & 2,164.90 & 2,114.37 & 50.53$$ & 2,164.90 & 1,968.94 & 195.96$$ \\
+     & [824.94] & [803.38] & (258.06) & [824.94] & [898.21] & (279.45) \\
+    \hline
+    \multicolumn{7}{l}{\textit{Panel B: Locational Marginal Price (2015)}} \\
+    Total LMP & 36.57 & 36.17 & 0.40$$ & 36.57 & 37.24 & -0.68$$ \\
+     & [2.62] & [3.79] & (1.55) & [2.62] & [1.93] & (0.79) \\
+    System Energy Price & 32.71 & 33.26 & -0.55$^{**}$ & 32.71 & 33.34 & -0.63$^{***}$ \\
+     & [1.54] & [0.55] & (0.24) & [1.54] & [0.00] & (0.20) \\
+    Inefficient Pricing & 3.86 & 2.91 & 0.95$$ & 3.86 & 3.91 & -0.05$$ \\
+     & [1.09] & [3.73] & (1.52) & [1.09] & [1.93] & (0.73) \\
+    Congestion Price & 3.23 & 2.77 & 0.46$$ & 3.23 & 3.37 & -0.14$$ \\
+     & [1.10] & [3.21] & (1.31) & [1.10] & [1.66] & (0.63) \\
+    Marginal Loss Price & 0.63 & 0.14 & 0.49$^{*}$ & 0.63 & 0.54 & 0.09$$ \\
+     & [0.15] & [0.71] & (0.29) & [0.15] & [0.42] & (0.16) \\
+    Number of Nodes & 2.83 & 2.17 & 0.66$$ & 2.83 & 2.16 & 0.68$^{*}$ \\
+     & [1.83] & [1.26] & (0.52) & [1.83] & [0.78] & (0.37) \\
+    \hline
+    \multicolumn{7}{l}{\textit{Panel C: Locational Marginal Price (2016)}} \\
+    Total LMP & 30.78 & 29.84 & 0.93$$ & 30.78 & 30.37 & 0.40$$ \\
+     & [0.77] & [2.62] & (0.99) & [0.77] & [1.77] & (0.62) \\
+    System Energy Price & 27.54 & 27.55 & -0.01$$ & 27.54 & 27.56 & -0.02$$ \\
+     & [0.18] & [0.21] & (0.08) & [0.18] & [0.26] & (0.09) \\
+    Inefficient Pricing & 3.23 & 2.29 & 0.94$$ & 3.23 & 2.81 & 0.42$$ \\
+     & [0.68] & [2.62] & (0.99) & [0.68] & [1.77] & (0.61) \\
+    Congestion Price & 2.94 & 2.27 & 0.67$$ & 2.94 & 2.60 & 0.34$$ \\
+     & [0.75] & [2.34] & (0.89) & [0.75] & [1.60] & (0.56) \\
+    Marginal Loss Price & 0.30 & 0.02 & 0.27$^{*}$ & 0.30 & 0.22 & 0.08$$ \\
+     & [0.25] & [0.42] & (0.16) & [0.25] & [0.32] & (0.11) \\
+    Number of Nodes & 2.71 & 2.21 & 0.51$$ & 2.71 & 2.20 & 0.51$$ \\
+     & [1.70] & [1.25] & (0.48) & [1.70] & [0.76] & (0.34) \\
+    \hline
+    Number of Unique Census Tracts & 10 & 330 & & 10 & 57 & \\
+    Number of Census Tracts & 10 & 330 & & 10 & 100 & \\
+\hline\hline
+\end{tabular}
+\vspace{0.5em}
+\begin{minipage}{\linewidth}
+\footnotesize
+\textit{Notes:} Standard deviations in brackets; standard errors in parentheses.
+$^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+Significance from OLS (before matching) and WLS with inverse-frequency weights (after matching).
+LMP panels computed separately per year to avoid node-coverage artefacts.
+ACS 2015 data was not available; Panel A uses 2016 data only.
+\end{minipage}
+\end{table}
