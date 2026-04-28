@@ -42,7 +42,7 @@ Master-Thesis-2026/
 │   ├── figures/                  # Plots
 │   └── tables/                   # LaTeX tables
 │
-├── environment_a.yml         # Python environment for notebooks 01–08
+├── environment_1.yml         # Python environment for notebooks 01–08
 ├── README.md
 └── .gitignore
 ```
