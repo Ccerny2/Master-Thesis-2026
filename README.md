@@ -58,3 +58,12 @@ Master-Thesis-2026/
 | ACS 5-Year Estimates  | US Census Bureau        | Tract-level ACS demographics                     |
 | TIGER/Line Shapefiles | US Census Bureau        | Virginia census tract boundaries (2016)          |
 | HIFLD Substations     | HIFLD Open Data         | Electric substation locations for pnode matching |
+
+
+---
+
+## Replication
+
+The preprocessing pipeline and DiD analysis were developed across two environments. 
+
+Use `environment_elena.yml` to run the data pre-processing notebooks (01–08). 
