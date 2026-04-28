@@ -1,8 +1,5 @@
 .DS_Store
-data/raw/usa_data/electricSubstations/
 *.duckdb
 *.duckdb.wal
 *.parquet
-data/raw/variable_data/electricsubstations/
 data/raw/electricSubstations/Shapefile/electric_substations_hifld_v4_FieldMods.dbf
-drafts_elena/variable_data/electricSubstations/Shapefile/electric_substations_hifld_v4_FieldMods.dbf
