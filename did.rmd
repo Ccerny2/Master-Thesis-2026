@@ -42,6 +42,7 @@ df <- df %>%
 summary(twfe)
 ```
 
+## Sun Abraham (2021)
 
 ```{r sun-abraham, message=FALSE, warning=FALSE}
 # Sun and Abraham (2021) model
@@ -261,7 +262,69 @@ ggplot(did_compare, aes(x = method, y = estimate)) +
   theme_minimal(base_size = 13)
   ```
 
-  ## Multi-outcome DiD models
+### Outputs
+
+Event study plot to check whether treated and control tracts had similar pre-treatment trends.
+```{r event-study-plot, message=FALSE, warning=FALSE}
+# ------------------------------------------------------------
+# Event study: parallel trends check
+# ------------------------------------------------------------
+
+event_model <- feols(
+  inefficient_pricing ~ sunab(cohort_sa, year, ref.p = -1) |
+    census_geoid + year,
+  data = df,
+  weights = ~ weight,
+  cluster = ~ census_geoid
+)
+
+iplot(
+  event_model,
+  ref.line = -1,
+  xlab = "Years Relative to Data Center Entry",
+  ylab = "Effect on Inefficient Pricing ($/MWh)",
+  main = "Event Study: Data Center Entry and Inefficient Pricing"
+)
+```
+```{r event-study-plot-gg, message=FALSE, warning=FALSE}
+event_results <- broom::tidy(event_model, conf.int = TRUE) %>%
+  filter(grepl("year::", term)) %>%
+  mutate(
+    event_time = as.numeric(gsub(".*year::(-?\\d+).*", "\\1", term))
+  )
+
+ggplot(event_results, aes(x = event_time, y = estimate)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray60") +
+  geom_vline(xintercept = -1, linetype = "dotted", color = "gray50") +
+  geom_errorbar(
+    aes(ymin = conf.low, ymax = conf.high),
+    width = 0.15,
+    color = "gray40"
+  ) +
+  geom_point(size = 2.5) +
+  labs(
+    title = "Event Study: Data Center Entry and Inefficient Pricing",
+    subtitle = "Reference period is one year before data center entry",
+    x = "Years Relative to Data Center Entry",
+    y = "Estimated Effect ($/MWh)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+
+  dir.create("output/figures", recursive = TRUE, showWarnings = FALSE)
+
+ggsave(
+  "output/figures/event_study_inefficient_pricing.png",
+  width = 7,
+  height = 5
+)
+```
+
+## Multi-outcome DiD models
 
 ```{r multi-outcome-did, message=FALSE, warning=FALSE}
 # ------------------------------------------------------------
@@ -451,24 +514,131 @@ did_results_all %>%
   print(n = Inf)
 ```
 
-```{r multi-outcome-did-plot, message=FALSE, warning=FALSE}
-ggplot(did_results_all, aes(x = method, y = estimate)) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "gray50") +
-  geom_point(size = 2.5) +
-  geom_errorbar(
-    aes(ymin = conf.low, ymax = conf.high),
-    width = 0.15,
+```{r multi-outcome-did-latex-table, message=FALSE, warning=FALSE}
+# ------------------------------------------------------------
+# Save DiD results as LaTeX table
+# ------------------------------------------------------------
+
+dir.create("output/tables", recursive = TRUE, showWarnings = FALSE)
+
+add_stars <- function(est, p) {
+  stars <- case_when(
+    p < 0.01 ~ "$^{***}$",
+    p < 0.05 ~ "$^{**}$",
+    p < 0.10 ~ "$^{*}$",
+    TRUE ~ ""
+  )
+  paste0(sprintf("%.3f", est), stars)
+}
+
+did_table <- did_results_all %>%
+  arrange(outcome_label, method) %>%
+  mutate(
+    estimate_stars = add_stars(estimate, p.value),
+    se_fmt = sprintf("%.3f", se),
+    p_fmt = sprintf("%.3f", p.value)
+  ) %>%
+  select(
+    outcome_label,
+    method,
+    estimate_stars,
+    se_fmt,
+    p_fmt
+  )
+
+latex_rows <- did_table %>%
+  mutate(
+    row = paste0(
+      outcome_label, " & ",
+      method, " & ",
+      estimate_stars, " & ",
+      se_fmt, " & ",
+      p_fmt, " \\\\"
+    )
+  ) %>%
+  pull(row)
+
+latex_table <- paste0(
+"\\begin{table}[htbp]
+\\centering
+\\caption{Estimated Effects of Data Center Entry Across Difference-in-Differences Estimators}
+\\label{tab:did_estimators}
+\\begin{tabular}{llccc}
+\\hline\\hline
+\\textbf{Outcome} & \\textbf{Estimator} & \\textbf{Estimate} & \\textbf{Std. Error} & \\textbf{p-value} \\\\
+\\hline
+",
+paste(latex_rows, collapse = "\n"),
+"
+\\hline
+\\hline
+\\end{tabular}
+\\vspace{0.5em}
+\\begin{minipage}{\\textwidth}
+\\footnotesize
+\\textit{Notes:} This table reports estimated average treatment effects of data center entry across alternative difference-in-differences estimators. TWFE denotes the two-way fixed effects estimator. Sun-Abraham refers to the staggered adoption estimator proposed by Sun and Abraham (2021). Callaway-Sant'Anna refers to the group-time average treatment effect estimator proposed by Callaway and Sant'Anna (2021). Standard errors are clustered at the census tract level where applicable. $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+\\end{minipage}
+\\end{table}
+"
+)
+
+writeLines(latex_table, "output/tables/did_estimators.tex")
+```
+
+
+```{r multi-outcome-did-plot-v2, message=FALSE, warning=FALSE}
+
+did_results_all$outcome_label <- factor(
+  did_results_all$outcome_label,
+  levels = c(
+    "Total LMP",
+    "Inefficient Pricing",
+    "Congestion",
+    "Marginal Loss",
+    "System Energy"
+  )
+)
+
+did_results_all$method <- factor(
+  did_results_all$method,
+  levels = c("TWFE", "Sun-Abraham", "Callaway-Sant'Anna")
+)
+
+ggplot(did_results_all,
+       aes(x = estimate, y = method)) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "gray50") +
+  geom_errorbarh(
+    aes(xmin = conf.low, xmax = conf.high),
+    height = 0.18,
     linewidth = 0.7
   ) +
-  coord_flip() +
-  facet_wrap(~ outcome_label, scales = "free_x") +
+  geom_point(size = 2.6) +
+  facet_grid(. ~ outcome_label, scales = "free_x") +
   labs(
     title = "Estimated Effects of Data Center Entry Across DiD Estimators",
     subtitle = "TWFE, Sun-Abraham, and Callaway-Sant'Anna",
-    x = NULL,
-    y = "Estimated ATT ($/MWh)"
+    x = "Estimated ATT ($/MWh)",
+    y = NULL
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(hjust = 0.5,face = "bold", size = 15),
+    plot.subtitle = element_text(hjust = 0.5, size = 12),
+    strip.text = element_text(face = "bold", size = 11),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.text.y = element_text(size = 12),
+    axis.text.x = element_text(size = 12),
+    panel.spacing.x = unit(1.2, "lines")
+  )
+
+ ggsave(
+  filename = "output/figures/did_results.png",
+  width = 10,
+  height = 6,
+  dpi = 300
+)
+
 ```
 
 ```{r save-multi-outcome-results, message=FALSE, warning=FALSE}
@@ -476,6 +646,6 @@ dir.create("output", showWarnings = FALSE)
 
 write_csv(
   did_results_all,
-  "output/did_results_all_outcomes.csv"
+  "output/csv_files/did_results_all_outcomes.csv"
 )
 ```

@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering
+\caption{Estimated Effects of Data Center Entry Across Difference-in-Differences Estimators}
+\label{tab:did_estimators}
+\begin{tabular}{llccc}
+\hline\hline
+\textbf{Outcome} & \textbf{Estimator} & \textbf{Estimate} & \textbf{Std. Error} & \textbf{p-value} \\
+\hline
+Total LMP & TWFE & 4.011$^{*}$ & 2.315 & 0.088 \\
+Total LMP & Sun-Abraham & 4.185$^{***}$ & 1.531 & 0.006 \\
+Total LMP & Callaway-Sant'Anna & 4.178$^{**}$ & 1.625 & 0.010 \\
+Inefficient Pricing & TWFE & 3.883 & 2.339 & 0.102 \\
+Inefficient Pricing & Sun-Abraham & 4.038$^{***}$ & 1.540 & 0.009 \\
+Inefficient Pricing & Callaway-Sant'Anna & 4.030$^{**}$ & 1.645 & 0.014 \\
+Congestion & TWFE & 3.601 & 2.307 & 0.123 \\
+Congestion & Sun-Abraham & 3.710$^{**}$ & 1.504 & 0.014 \\
+Congestion & Callaway-Sant'Anna & 3.705$^{**}$ & 1.603 & 0.021 \\
+Marginal Loss & TWFE & 0.282$^{***}$ & 0.103 & 0.008 \\
+Marginal Loss & Sun-Abraham & 0.328$^{***}$ & 0.111 & 0.003 \\
+Marginal Loss & Callaway-Sant'Anna & 0.325$^{***}$ & 0.115 & 0.005 \\
+System Energy & TWFE & 0.128 & 0.226 & 0.574 \\
+System Energy & Sun-Abraham & 0.146 & 0.209 & 0.483 \\
+System Energy & Callaway-Sant'Anna & 0.148 & 0.218 & 0.497 \\
+\hline
+\hline
+\end{tabular}
+\vspace{0.5em}
+\begin{minipage}{\textwidth}
+\footnotesize
+\textit{Notes:} This table reports estimated average treatment effects of data center entry across alternative difference-in-differences estimators. TWFE denotes the two-way fixed effects estimator. Sun-Abraham refers to the staggered adoption estimator proposed by Sun and Abraham (2021). Callaway-Sant'Anna refers to the group-time average treatment effect estimator proposed by Callaway and Sant'Anna (2021). Standard errors are clustered at the census tract level where applicable. $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{minipage}
+\end{table}
+
