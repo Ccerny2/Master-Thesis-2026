@@ -42,6 +42,7 @@ Master-Thesis-2026/
 │   ├── figures/                  # Plots
 │   └── tables/                   # LaTeX tables
 │
+├── environment_elena.yml         # Python environment for notebooks 01–08
 ├── README.md
 └── .gitignore
 ```
@@ -66,4 +67,4 @@ Master-Thesis-2026/
 
 The preprocessing pipeline and DiD analysis were developed across two environments. 
 
-Use `environment_elena.yml` to run the data pre-processing notebooks (01–08). 
+Use `environment_elena.yml` to run the data pre-processing in notebooks 01–08. 
