@@ -67,4 +67,4 @@ Master-Thesis-2026/
 
 The preprocessing pipeline and DiD analysis were developed across two environments. 
 
-Use `environment_elena.yml` to run the data pre-processing in notebooks 01–08. 
+Use `environment_1.yml` to run the data pre-processing in notebooks 01–08. 
